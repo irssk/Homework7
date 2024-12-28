@@ -9,5 +9,11 @@ public class Main {
         board.add("Obi-van");
 
         board.draw();
+
+        System.out.println("Delivering: " + board.deliver());
+        board.draw();
+
+        System.out.println("Delivering order 3: " + board.deliver(3));
+        board.draw();
     }
 }

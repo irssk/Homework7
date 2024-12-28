@@ -31,4 +31,12 @@ public class CoffeeOrderBoard {
         orders.remove(orderToDeliver.get());
         return orderToDeliver.get();
     }
+
+    public void draw() {
+        System.out.println("=============");
+        System.out.println("Num | Name");
+        for (Order order : orders) {
+            System.out.printf("%d | %s%n", order.getNumber(), order.getName());
+        }
+    }
 }
